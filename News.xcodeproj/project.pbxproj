@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5743938427B464CE0099A2BF /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5743938327B464CE0099A2BF /* NetworkDataFetcher.swift */; };
+		5743938827B520780099A2BF /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5743938727B520780099A2BF /* NewsViewController.swift */; };
 		5799808E27AF0BEE00906FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5799808D27AF0BEE00906FF0 /* AppDelegate.swift */; };
 		5799809027AF0BEE00906FF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5799808F27AF0BEE00906FF0 /* SceneDelegate.swift */; };
-		5799809227AF0BEE00906FF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5799809127AF0BEE00906FF0 /* ViewController.swift */; };
 		5799809527AF0BEE00906FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5799809327AF0BEE00906FF0 /* Main.storyboard */; };
 		5799809727AF0BF000906FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5799809627AF0BF000906FF0 /* Assets.xcassets */; };
 		5799809A27AF0BF000906FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5799809827AF0BF000906FF0 /* LaunchScreen.storyboard */; };
+		579980A527AF16BD00906FF0 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579980A427AF16BD00906FF0 /* News.swift */; };
+		579980A827AF181200906FF0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579980A727AF181200906FF0 /* NetworkManager.swift */; };
+		579980AA27AF19FB00906FF0 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579980A927AF19FB00906FF0 /* NewsCell.swift */; };
+		579980AC27AF1A7F00906FF0 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579980AB27AF1A7F00906FF0 /* NewsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5743938327B464CE0099A2BF /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		5743938727B520780099A2BF /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		5799808A27AF0BEE00906FF0 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5799808D27AF0BEE00906FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5799808D27AF0BEE00906FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5799808F27AF0BEE00906FF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5799809127AF0BEE00906FF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5799809427AF0BEE00906FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5799809627AF0BF000906FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5799809927AF0BF000906FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5799809B27AF0BF000906FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		579980A427AF16BD00906FF0 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		579980A727AF181200906FF0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		579980A927AF19FB00906FF0 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		579980AB27AF1A7F00906FF0 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		5799808C27AF0BEE00906FF0 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				57DCA60D27B5AE0C002D9BE0 /* ViewControllers */,
+				579980A627AF17F500906FF0 /* Services */,
+				579980A127AF167D00906FF0 /* Models */,
 				5799808D27AF0BEE00906FF0 /* AppDelegate.swift */,
 				5799808F27AF0BEE00906FF0 /* SceneDelegate.swift */,
-				5799809127AF0BEE00906FF0 /* ViewController.swift */,
-				5799809327AF0BEE00906FF0 /* Main.storyboard */,
 				5799809627AF0BF000906FF0 /* Assets.xcassets */,
-				5799809827AF0BF000906FF0 /* LaunchScreen.storyboard */,
 				5799809B27AF0BF000906FF0 /* Info.plist */,
+				579980A927AF19FB00906FF0 /* NewsCell.swift */,
+				5799809327AF0BEE00906FF0 /* Main.storyboard */,
+				5799809827AF0BF000906FF0 /* LaunchScreen.storyboard */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		579980A127AF167D00906FF0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				579980A427AF16BD00906FF0 /* News.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		579980A627AF17F500906FF0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				579980A727AF181200906FF0 /* NetworkManager.swift */,
+				5743938327B464CE0099A2BF /* NetworkDataFetcher.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		57DCA60D27B5AE0C002D9BE0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5743938727B520780099A2BF /* NewsViewController.swift */,
+				579980AB27AF1A7F00906FF0 /* NewsTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5799809227AF0BEE00906FF0 /* ViewController.swift in Sources */,
+				5743938427B464CE0099A2BF /* NetworkDataFetcher.swift in Sources */,
 				5799808E27AF0BEE00906FF0 /* AppDelegate.swift in Sources */,
+				579980A827AF181200906FF0 /* NetworkManager.swift in Sources */,
+				579980A527AF16BD00906FF0 /* News.swift in Sources */,
+				579980AA27AF19FB00906FF0 /* NewsCell.swift in Sources */,
+				5743938827B520780099A2BF /* NewsViewController.swift in Sources */,
+				579980AC27AF1A7F00906FF0 /* NewsTableViewController.swift in Sources */,
 				5799809027AF0BEE00906FF0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +341,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +370,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
